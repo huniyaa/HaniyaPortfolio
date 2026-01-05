@@ -1,0 +1,1363 @@
+
+.project-page .hero-section {
+  /* project hero spacing only */
+}
+
+.project-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.eyes-logo {
+  display: block;
+}
+
+.eyes-logo img {
+  height: 25px;
+  width: auto;
+}
+
+.back-link {
+  font-family: 'Amiko', sans-serif;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.project-main {
+  margin-top: 64px;
+  padding-bottom: 3rem;
+}
+
+/* LAYOUT */
+.project-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0;
+  max-width: 100%;
+}
+
+/* Vertical Navigation - Hidden initially, shows on scroll */
+/* Vertical Navigation - Hidden initially, shows on scroll */
+.project-nav {
+  position: sticky;              /* stays in grid, sticks when scrolling */
+  top: 96px;                     /* header (64px) + a little breathing room */
+  align-self: start;
+
+  width: 220px;
+  max-height: calc(100vh - 96px);
+  overflow-y: auto;
+
+  background: white;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.project-nav.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.project-nav.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-sticky {
+  padding: 2rem 1.5rem;
+}
+
+.nav-sticky a {
+  display: block;
+  font-family: 'Amiko', sans-serif;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+  padding-left: 0.8rem;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.nav-sticky a:hover {
+  border-left-color: var(--accent-blue);
+  padding-left: 1.2rem;
+}
+
+.nav-sticky a.active {
+  border-left-color: var(--accent-blue);
+  font-weight: 700;
+  color: var(--accent-blue);
+}
+
+/* Content Area */
+.project-content {
+  grid-column: 2;
+  min-width: 0;
+}
+
+/* Sections */
+.content-section {
+  padding: 4rem 5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  padding-top: 2rem !important;
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  font-family: 'Amiko', sans-serif;
+  margin: 2rem 0 1rem 0;
+  color: #000;
+}
+
+.wip-badge {
+  font-size: 1rem;
+  background: var(--accent-yellow);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.project-meta {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.project-subtitle {
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  font-family: 'Amiko', sans-serif;
+  margin: 0 0 1.5rem 0;
+  color: var(--accent-blue);
+}
+
+.content-section h3 {
+  font-size: 1.3rem;
+  font-family: 'Amiko', sans-serif;
+  margin: 2rem 0 1rem 0;
+  color: #000;
+}
+
+.content-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+  max-width: 800px;
+  color: #333;
+}
+
+.under-construction {
+  font-style: italic;
+  color: #999;
+}
+
+.overview-item {
+  margin-bottom: 2rem;
+}
+
+.overview-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+/* LARGE HERO LAPTOP SECTION */
+.hero-laptop-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+
+.laptop-full-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-laptop-wrapper .skills-badge {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  background: #fff;
+  padding: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  max-width: 180px;
+  text-align: left;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.skills-badge strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #000;
+}
+
+.hero-text-content {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.hero-text-content h1 {
+  margin-top: 0;
+}
+
+
+.click-indicator {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Amiko', sans-serif;
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.laptop-mockup:hover .click-indicator {
+  opacity: 1;
+}
+
+
+/* CENTER: laptop */
+.journey-page .laptop-link {
+  display: block;
+  flex: 1 1 auto;
+  max-width: 760px;
+}
+
+.journey-page .laptop-mockup-large {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.journey-page .laptop-full-image {
+  width: 100%;
+  height: auto;
+  max-height: 58vh;      /* THIS is what makes it fit on screen */
+  object-fit: contain;
+  display: block;
+}
+
+/* RIGHT: skills */
+.journey-page .hero-skills {
+  flex: 0 0 240px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.journey-page .hero-skills strong {
+  font-family: 'Amiko', sans-serif;
+  color: #000;
+}
+
+/* Responsive: stack nicely */
+@media (max-width: 900px) {
+  .journey-page .hero-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .journey-page .hero-left-note,
+  .journey-page .hero-skills {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .journey-page .hero-arrow {
+    margin: 0 auto;
+  }
+
+  .journey-page .laptop-full-image {
+    max-height: 50vh;
+  }
+}
+/* BEFORE/AFTER SLIDER */
+.before-after-slider {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border: 2px solid #000;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.before-image,
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.after-image {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #000;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+.slider-line {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-family: 'Amiko', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.label-before {
+  color: #666;
+}
+
+.label-after {
+  color: var(--accent-blue);
+}
+
+/* IMAGE GRID */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+  max-width: 1000px;
+}
+
+.image-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.content-image {
+  width: 100%;
+  background: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease;
+  min-height: 300px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.10), 0 -4px 4px rgba(0,0,0,0.08);
+}
+
+/* Drop Shadow for White Images */
+.content-image.shadowed {
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1), 0 -4px 4px rgba(0,0,0,0.08);
+  filter: blur(0); /* Enable blur context */
+}
+
+
+.content-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* =========================
+   PROJECT OVERVIEW — 2-COLUMN GRID (label + content)
+   Works for Journey, Golf, SCC (and any page using .overview-item)
+   ========================= */
+
+#overview .overview-item{
+  display: grid;
+  grid-template-columns: 170px 1fr;  /* LEFT labels | RIGHT content */
+  column-gap: 2.5rem;
+  row-gap: 0.5rem;
+  align-items: start;
+
+  padding: 1.2rem 0;
+  margin: 0; /* override older margin-bottom */
+}
+
+/* Left column label (Description / Problem / Goals / Role) */
+#overview .overview-item h3{
+  margin: 0;
+  font-family: "Amiko", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Right column paragraph */
+#overview .overview-item p{
+  margin: 0;
+  max-width: none; /* IMPORTANT: remove the 800px clamp for this layout */
+}
+
+/* Optional: slightly tighter spacing under the "Project Overview" h2 */
+#overview h2{
+  margin-bottom: 1.75rem;
+}
+
+/* Responsive: stack label above text on smaller screens */
+@media (max-width: 768px){
+  #overview .overview-item{
+    grid-template-columns: 1fr;
+    row-gap: 0.4rem;
+    padding: 1rem 0;
+  }
+
+  #overview .overview-item h3{
+    font-size: 1.2rem;
+  }
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  font-size: 2rem;
+  font-family: 'Amiko', sans-serif;
+  font-weight: 600;
+
+  color: #fff;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  line-height: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--accent-blue);
+  color: white;
+  font-family: 'Amiko', sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.cta-button:hover {
+  background: #4a75e0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(94, 138, 255, 0.4);
+}
+
+/* Next Project */
+.next-project {
+  padding: 4rem 5rem;
+  text-align: center;
+}
+
+.next-link {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.next-link:hover {
+  background: var(--accent-yellow);
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+
+.next-link span {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.next-link h3 {
+  font-family: 'Amiko', sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1200px) {
+  .hero-laptop-wrapper .skills-badge {
+    position: static;
+    transform: none;
+    margin: 2rem auto 0;
+    max-width: 350px;
+  }
+  
+  .hero-laptop-container .skills-badge {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-layout {
+    grid-template-columns: 180px 1fr;
+  }
+  
+  .project-nav {
+    width: 180px;
+  }
+
+  .project-content {
+    margin-left: 0px;
+  }
+  
+  .content-section {
+    padding: 3rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-header {
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .nav-sticky {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-sticky a {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border-left: none;
+  }
+  
+  .nav-sticky a:hover,
+  .nav-sticky a.active {
+    background: var(--accent-blue);
+    color: white;
+    border-color: var(--accent-blue);
+  }
+
+  .project-content {
+    margin-left: 0;
+  }
+  
+  .content-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .content-section h1 {
+    font-size: 2rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .slider-container {
+    height: 400px;
+  }
+
+  .next-project {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  nav {
+    gap: 0.75rem;
+  }
+  
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .content-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .project-header {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .content-section h1 {
+    font-size: 1.7rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .slider-container {
+    height: 300px;
+  }
+}
+
+
+/* =========================================
+   JOURNEYLINE HERO — FINAL OVERRIDES
+   Paste at VERY BOTTOM of project.css
+   ========================================= */
+
+.journey-page .hero-section{
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* 3 columns: note | laptop | skills, then meta underneath */
+.journey-page .hero-stage{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: minmax(150px, 190px) minmax(320px, 1fr) minmax(180px, 260px);
+  grid-template-rows: auto auto;
+  column-gap: clamp(1rem, 3vw, 2.5rem);
+  row-gap: 1rem;
+  align-items: center;
+}
+
+/* LEFT NOTE */
+.journey-page .hero-annotation{
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+.journey-page .hero-annotation p{
+  margin: 0 0 0.6rem 0;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 0.95rem;
+}
+
+/* Arrow scale down */
+.journey-page .hero-annotation img{
+  width: clamp(85px, 10vw, 120px);
+  height: auto;
+  display: block;
+}
+
+/* CENTER LAPTOP */
+.journey-page .laptop-link{
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  width: 100%;
+  max-width: 760px;
+  display: block;
+}
+
+.journey-page .hero-laptop{
+  width: 100%;
+  height: auto;
+
+  /* KEY: keeps it fitting on shorter screens */
+  max-height: clamp(260px, 52vh, 520px);
+  object-fit: contain;
+  display: block;
+}
+
+/* RIGHT SKILLS */
+.journey-page .hero-skills{
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: start;
+  align-self: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.journey-page .hero-skills strong{
+  font-family: "Amiko", sans-serif;
+  color: #000;
+}
+
+/* TITLE/META UNDERNEATH (tighten spacing) */
+.journey-page .hero-meta{
+  grid-column: 1 / -1;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.journey-page .hero-meta h1{
+  margin: 0.6rem 0 0.35rem 0;   /* smaller gap */
+}
+
+.journey-page .project-subtitle{
+  margin: 0 0 0.9rem 0;        /* smaller gap */
+}
+
+/* Align hero text column with Overview column */
+.journey-page #hero.content-section{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media (max-width: 1024px){
+  .journey-page #hero.content-section{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px){
+  .journey-page #hero.content-section{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* RESPONSIVE: stack on smaller widths */
+@media (max-width: 900px){
+  .journey-page .hero-stage{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+  }
+
+  .journey-page .hero-annotation{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .journey-page .laptop-link{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .journey-page .hero-skills{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .journey-page .hero-meta{
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+.journey-page .hero-stage{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Row: left note | laptop | skills */
+.journey-page .hero-row{
+  display: grid;
+  grid-template-columns: 170px 1fr 240px;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+/* LEFT */
+.journey-page .hero-annotation p{
+  font-family: 'Amiko', sans-serif;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+  line-height: 1.2;
+}
+
+/* Vector78 smaller */
+.journey-page .hero-annotation img{
+  width: clamp(70px, 6vw, 95px);
+  height: auto;
+  display: block;
+}
+
+/* CENTER laptop bigger, but still fits screen */
+.journey-page .laptop-link img{
+  width: 100%;
+  /*max-width: 90%;
+  max-height: 52vh;  */       /* key: keeps it fitting on smaller screens */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RIGHT skills */
+.journey-page .hero-skills{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #333;
+}
+.journey-page .hero-skills strong{
+  font-family: 'Amiko', sans-serif;
+  color: #000;
+}
+
+/* BELOW: align hero text with the same left edge as your sections */
+.journey-page .hero-meta{
+  margin-top: 1.25rem;
+  text-align: left; /* matches the overview column */
+}
+
+/* Tighten laptop-to-title spacing */
+.journey-page .hero-meta h1{
+  margin: 0.6rem 0 0.6rem 0;
+}
+
+/* Responsive stacking */
+@media (max-width: 900px){
+  .journey-page .hero-row{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .journey-page .hero-meta{
+    text-align: left; /* keep consistent with the page content */
+  }
+  .journey-page .hero-annotation{
+    justify-self: center;
+  }
+  .journey-page .hero-skills{
+    justify-self: center;
+  }
+  .journey-page .laptop-link img{
+    max-height: 46vh;
+  }
+}
+
+/* =========================
+   GOLF HERO FIX (slider fits + aligns with title)
+   ========================= */
+
+.golf-page #hero {
+  /* less vertical padding so everything fits on first screen */
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+/* keep slider + title in the same centered page column */
+.golf-page #hero .before-after-slider,
+.golf-page #hero .hero-meta {
+  max-width: 1100px;   /* match your content-section “column” feel */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* make the slider box shorter so the title stays visible */
+.golf-page #hero .slider-container {
+  height: clamp(260px, 55vh, 520px); /* key fix */
+}
+
+/* tighten space between slider and title */
+.golf-page #hero .before-after-slider {
+  margin-bottom: 1.5rem;
+}
+
+/* align title block nicely with the slider width */
+.golf-page #hero .hero-meta {
+  text-align: left;
+}
+
+/* reduce the big gap above the title */
+.golf-page #hero .hero-meta h1 {
+  margin: 0.5rem 0 0.75rem;
+}
+
+/* optional: keep labels snug */
+.golf-page #hero .slider-labels {
+  padding-top: 0.75rem;
+  padding-bottom: 0;
+}
+
+/* =========================
+   SCC HERO (wireframe match)
+   ========================= */
+.scc-page .hero-section{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* 3-column hero row */
+.scc-page .scc-hero-stage{
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto 1.25rem;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: 170px minmax(320px, 1fr) 240px;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+/* LEFT annotation */
+.scc-page .scc-hero-annotation{
+  justify-self: end;
+  text-align: left;
+  pointer-events: none;
+}
+
+.scc-page .scc-hero-annotation p{
+  margin: 0 0 0.5rem 0;
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Vector78 smaller */
+.scc-page .scc-hero-annotation img{
+  width: 95px;   /* tweak: smaller arrow */
+  height: auto;
+  display: block;
+}
+
+/* CENTER laptop — always fits screen */
+.scc-page .scc-laptop-link{
+  justify-self: center;
+  display: block;
+  width: 100%;
+}
+
+.scc-page .scc-laptop-img{
+  width: min(860px, 100%);
+  height: auto;
+  max-height: 56vh;     /* key: prevents overflow on smaller screens */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RIGHT skills */
+.scc-page .scc-hero-skills{
+  justify-self: start;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.scc-page .scc-hero-skills strong{
+  font-family: "Amiko", sans-serif;
+  color: #000;
+}
+
+/* Meta aligned to your main column (like Project Overview) */
+.scc-page .scc-hero-meta{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+/* Responsive stack */
+@media (max-width: 900px){
+  .scc-page .scc-hero-stage{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .scc-page .scc-hero-annotation{
+    justify-self: center;
+    text-align: center;
+  }
+
+  .scc-page .scc-hero-skills{
+    justify-self: center;
+  }
+
+  .scc-page .scc-hero-meta{
+    text-align: center;
+  }
+
+  .scc-page .scc-laptop-img{
+    max-height: 48vh;
+  }
+}
+
+/* =========================
+   JOURNEYLINE — Color Scheme circles
+   ========================= */
+.journey-page .color-scheme{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1100px;
+}
+
+.journey-page .color-group h4{
+  margin: 0 0 1rem 0;
+  font-family: "Amiko", sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Primary row (big circles) */
+.journey-page .swatch-row{
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Supplementary colors: vertical rows (no overflow) */
+.journey-page .swatch-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 2.5rem;
+}
+
+/* Stack circle + hex vertically */
+.journey-page .swatch.small{
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Force true circles */
+.journey-page .swatch.small .dot{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.journey-page .swatch{
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.journey-page .dot{
+  width: 110px;
+  height: 110px;
+  border-radius: 999px;
+  background: var(--swatch);
+  display: inline-block;
+}
+
+.journey-page .swatch.small .dot{
+  width: 72px;
+  height: 72px;
+}
+
+.journey-page .hex{
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .journey-page .color-scheme{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .journey-page .swatch-grid{
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  .journey-page .dot{ width: 96px; height: 96px; }
+  .journey-page .swatch.small .dot{ width: 64px; height: 64px; }
+}
+
+/* =========================
+   JOURNEYLINE — Competitive Analysis Cards
+   ========================= */
+
+.journey-page .comp-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+}
+
+/* Card = logo square + colored panel */
+.journey-page .comp-card{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  min-height: 150px;
+  overflow: hidden;
+}
+
+/* Left square logo */
+.journey-page .comp-logo{
+  width: 160px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* optional */
+}
+
+.journey-page .comp-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes it fill like your wireframe */
+  display: block;
+}
+
+/* Right colored text panel */
+.journey-page .comp-body{
+  padding: 1.25rem 1.5rem;
+  color: #fff;
+}
+
+.journey-page .comp-body h4{
+  margin: 0 0 0.5rem 0;
+  font-family: "Amiko", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.journey-page .comp-body p{
+  margin: 0;
+  max-width: none;
+  color: #fff;
+}
+
+.journey-page .comp-body em{
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* Background colors (match your wireframe vibe) */
+.journey-page .comp-card.kayak .comp-body{ background: #B85A1B; }
+.journey-page .comp-card.gmaps .comp-body{ background: #3B6FC7; }
+.journey-page .comp-card.wanderlog .comp-body{ background: #B44235; }
+.journey-page .comp-card.tripadvisor .comp-body{ background: #0AA84F; }
+
+.journey-page .comp-summary{
+  margin-top: 2rem;
+  max-width: 1000px;
+}
+
+/* Mobile: stack logo on top */
+@media (max-width: 768px){
+  .journey-page .comp-card{
+    grid-template-columns: 1fr;
+  }
+  .journey-page .comp-logo{
+    width: 100%;
+    height: 180px;
+  }
+}
+
+.reflection-list {
+  margin-top: 1.5rem;
+  padding-left: 1.25rem; /* bullet indent */
+}
+
+.reflection-list li {
+  margin-bottom: 1.25rem; /* vertical spacing between bullets */
+  line-height: 1.65;
+  max-width: 68ch; /* keeps text readable like your wireframe */
+}
+
+.next-project {
+  display: flex;
+  justify-content: flex-start; /* ← moves left */
+  padding-left: 620px; 
+}
+
+.next-card {
+  width: min(520px, 92%);
+  padding: 22px 26px;
+  text-decoration: none;
+  color: #111;
+  text-align: left;
+  background: #fff;
+}
+
+.next-kicker {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.next-title {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.next-arrow {
+  font-weight: 800;
+}

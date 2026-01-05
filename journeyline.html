@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journey Line - Haniya Humayun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body class="project-page journey-page">
+  <!-- Header -->
+  <header class="project-header">
+    <a href="index.HTML" class="eyes-logo">
+      <img src="eyelogo.svg" alt="Logo" />
+    </a>
+    <a href="index.HTML#works" class="back-link">← Back to Work</a>
+  </header>
+
+  <main class="project-main">
+    <div class="project-layout">
+      <!-- Vertical Navigation (hidden initially, shows on scroll) -->
+      <nav class="project-nav" id="projectNav">
+  <div class="nav-sticky">
+    <a href="#overview">Project Overview</a>
+    <a href="#inspiration">Inspiration</a>
+    <a href="#research">Research</a>
+    <a href="#design-process">Design Process</a>
+    <a href="#resolution">Resolution</a>
+  </div>
+</nav>
+
+      <!-- Content -->
+      <div class="project-content">
+        
+        <!-- Hero Section - Large Laptop -->
+       <section id="hero" class="content-section hero-section">
+  <div class="hero-stage">
+    
+    <!-- LEFT: note + arrow -->
+    <div class="hero-annotation">
+      <p>Click to<br>View Project</p>
+      <img src="Vector78.png" alt="" />
+    </div>
+
+    <!-- CENTER: laptop -->
+    <a href="https://project3-systems.vercel.app/index2.html" target="_blank" class="laptop-link">
+      <img class="hero-laptop" src="jourlineweb.png" alt="Journey Line App Screenshot" />
+    </a>
+
+    <!-- RIGHT: skills (this is what you’re missing/it’s currently sitting in the wrong place) -->
+    <div class="hero-skills">
+      <strong>Skills:</strong> Interaction Design,<br>
+      Frontend & Backend Development,<br>
+      Systems Design
+    </div>
+
+    <!-- BELOW: title/meta -->
+    <div class="hero-meta">
+      <h1>Journey Line Trip Planner Web App</h1>
+      <p class="project-meta">
+        <strong>Timeframe:</strong> 4–5 weeks &nbsp;&nbsp;
+        <strong>Team:</strong> Haniya Butt & Gloria Flores
+      </p>
+    </div>
+
+  </div>
+</section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+          <h2>Project Overview</h2>
+          
+          <div class="overview-item">
+            <h3>Description</h3>
+            <p>Journey Line is a travel-based app designed to allow locals and travelers to easily learn, browse and plan exciting trips on a calendar using pins and by referencing other created itineraries. By using a dynamic timeline visualization, it enhances browsing and organization.</p>
+          </div>
+
+          <div class="overview-item">
+            <h3>Problem</h3>
+            <p>There are plenty of itinerary apps out there, but they force users to decide between rigid planning tools or saving inspiration without structure. No single central space to organize ideas, inspiration, and concrete reservations.</p>
+          </div>
+
+          <div class="overview-item">
+            <h3>Goals</h3>
+            <p>To design a visual, timeline-based trip planner that can fit an undefined itinerary or a detailed one – always providing the flexibility to stay inspired throughout the journey.</p>
+          </div>
+
+          <div class="overview-item">
+            <h3>Role</h3>
+            <p>I was responsible for the system design, UX/UI, hierarchy and flow. I partnered with a developer collaborator to understand technical constraints and ensure feasibility.</p>
+          </div>
+        </section>
+
+        <!-- Inspiration -->
+        <section id="inspiration" class="content-section">
+          <h2>Inspiration</h2>
+          <h3>Moodboard</h3>
+          <p>I studied different systems to see how others visualize progression, iteration, and planning. From Figma's version control to Google Calendar's structure – I wanted to synthesize flexible planning with intuitive visual timelines.</p>
+          
+          <div class="image-grid single">
+            <div class="content-image shadowed">
+              <img src="jourmoodboard.png" alt="Inspiration Moodboard" />
+            </div>
+          </div>
+
+          <h3>Color Scheme</h3>
+          <p>The JourneyLine color system uses semantic, activity-based color coding to visually organize trips over time, helping users quickly understand and rearrange their journey with minimal cognitive effort.</p>
+          <div class="color-scheme">
+  <div class="color-group">
+    <h4>Primary Colors</h4>
+
+    <div class="swatch-row">
+      <div class="swatch">
+        <span class="dot" style="--swatch:#29478F;"></span>
+        <span class="hex">#29478F</span>
+      </div>
+
+      <div class="swatch">
+        <span class="dot" style="--swatch:#EFEFEF;"></span>
+        <span class="hex">#EFEFEF</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h4>Supplementary Colors</h4>
+
+    <div class="swatch-grid">
+      <div class="swatch small">
+        <span class="dot" style="--swatch:#FD6F6F;"></span>
+        <span class="hex">#FD6F6F</span>
+      </div>
+
+      <div class="swatch small">
+        <span class="dot" style="--swatch:#B98CE0;"></span>
+        <span class="hex">#B98CE0</span>
+      </div>
+
+      <div class="swatch small">
+        <span class="dot" style="--swatch:#A4E385;"></span>
+        <span class="hex">#A4E385</span>
+      </div>
+
+      <div class="swatch small">
+        <span class="dot" style="--swatch:#FFE46A;"></span>
+        <span class="hex">#FFE46A</span>
+      </div>
+
+      <div class="swatch small">
+        <span class="dot" style="--swatch:#7BA4DD;"></span>
+        <span class="hex">#7BA4DD</span>
+      </div>
+    </div>
+  </div>
+</div>
+        </section>
+
+        <!-- Research -->
+        <section id="research" class="content-section">
+          <h2>Research</h2>
+          <h3>Competitive Analysis</h3>
+          <p>An analysis of existing trip-planning web apps focused on user flow, interaction patterns, and how trips are created, updated, and visualized over time. The goal was to identify gaps in temporal planning, flexibility, and experiential clarity.</p>
+          <div class="comp-list">
+
+  <article class="comp-card kayak">
+    <div class="comp-logo">
+      <img src="kayak.png" alt="Kayak logo">
+    </div>
+    <div class="comp-body">
+      <h4>Kayak</h4>
+      <p><em>Kayak helps users book travel efficiently, but offers limited support for organizing or visualizing how a trip unfolds over time.</em></p>
+    </div>
+  </article>
+
+  <article class="comp-card gmaps">
+    <div class="comp-logo">
+      <img src="Googlemaps.jpeg" alt="Google Maps logo">
+    </div>
+    <div class="comp-body">
+      <h4>Google Maps</h4>
+      <p><em>Google Maps excels at showing where things are, but not when or in what order they should happen. Lack of order when planning multi-day or multi-city trips.</em></p>
+    </div>
+  </article>
+
+  <article class="comp-card wanderlog">
+    <div class="comp-logo">
+      <img src="wanderlog.jpg" alt="Wanderlog logo">
+    </div>
+    <div class="comp-body">
+      <h4>Wanderlog</h4>
+      <p><em>While Wanderlog introduces structure, it lacks fluid interaction. Users can plan, but can't easily reshape their journey through continuous timelines.</em></p>
+    </div>
+  </article>
+
+  <article class="comp-card tripadvisor">
+    <div class="comp-logo">
+      <img src="tripadvisor.png" alt="Tripadvisor logo">
+    </div>
+    <div class="comp-body">
+      <h4>TripAdvisor</h4>
+      <p><em>Tripadvisor supports decision-making, but not planning behavior.</em> Users must mentally translate reviews into an itinerary using external tools.</p>
+    </div>
+  </article>
+
+</div>
+
+<p class="comp-summary">
+  Across platforms, trips are stored efficiently but lack visual, time-based sequencing—creating an opportunity for a more flexible, narrative-driven planning experience.
+</p>
+        </section>
+
+        <!-- Design Process -->
+        <section id="design-process" class="content-section">
+          <h2>Design Process</h2>
+          <p>I started with wireframes mapping out the core user flow – from browsing inspiration to pinning activities onto a timeline. Early sketches helped clarify the drag-and-drop interaction model.</p>
+          
+          <h3>Initial Sketches</h3>
+          <p>Early sketches were used to explore layout ideas and core interactions, focusing on how trips, cities, and activities could be represented along a timeline. This stage helped define the overall structure before committing to digital layouts.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="joursketch.png" alt="Initial Sketches" />
+            </div>
+          </div>
+
+          <h3>User Flow</h3>
+          <p>User flow diagrams were created to map how users move through the app when creating, editing, and managing trips. These flows clarified system logic, reduced friction points, and ensured consistency across key actions.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="userflowjour.png" alt="User Flow Diagram" />
+            </div>
+          </div>
+
+          <h3>Low & Mid Fidelity Wireframes</h3>
+          <p>Low and mid-fidelity wireframes translated sketches and flows into structured screens. This stage focused on hierarchy, information placement, and interaction patterns without visual styling, allowing rapid iteration on layout and functionality.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="lowfid.png" alt="Low Fidelity Wireframes" />
+            </div>
+            <div class="content-image shadowed">
+              <img src="midfidjour.png" alt="Mid Fidelity Wireframes" />
+            </div>
+          </div>
+
+          <h3>High Fidelity Wireframes</h3>
+          <p>Refining the wireframes with visual styling, color, and interaction details.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="highfid.png" alt="High Fidelity Wireframe" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Final -->
+        <section id="resolution" class="content-section">
+          <h2>Resolution</h2>
+          <h3>Reflection</h3>
+          <ul class="reflection-list">
+  <li>This project was my first experience working with MongoDB and backend systems, expanding my skill set beyond HTML and CSS.</li>
+  <li>I gained a stronger understanding of how front-end interactions connect to data structures and APIs.</li>
+  <li>Designing JourneyLine was driven by real frustrations with rigid calendar planners and trip tools that lack day-by-day clarity.</li>
+  <li>Collaborating on a shared problem space reinforced the value of user-centered, system-level thinking.</li>
+  <li>The project increased my confidence in tackling unfamiliar technical challenges and building more dynamic, interactive web applications.</li>
+</ul>
+          <a href="https://project3-systems.vercel.app/index2.html" target="_blank" class="cta-button">View Live Project →</a>
+        </section>
+
+        <!-- Next Project -->
+        <section class="next-project">
+  <a href="golf.HTML" class="next-card">
+    <span class="next-kicker">Next Project</span>
+    <span class="next-title">
+      Golfnorth Redesign <span class="next-arrow">→</span>
+    </span>
+  </a>
+</section>
+      </div>
+    </div>
+  </main>
+ <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>© 2025 Haniya Humayun.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/haniya-butt-5ba002354/" class="footer-link linkedin" target="_blank">
+            LinkedIn
+          </a>
+          <a href="mailto:haniyahumayun@gmail.com" class="footer-link email">
+            Email
+          </a>
+          <a href="https://drive.google.com/file/d/1EtTj3OtxNpZwKZVB-AjChbu73V7cDmTo/view?usp=sharing" class="footer-link resume" target="_blank">
+            Resume
+          </a>
+        </div>
+      </div>
+    </footer>
+  <script src="script.js"></script>
+  <script src="journeyline.js"></script>
+</body>
+</html>

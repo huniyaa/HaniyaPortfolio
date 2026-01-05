@@ -1,0 +1,146 @@
+.skip {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  text-decoration: none;
+  z-index: 999;
+}
+
+:root {
+  --bg: #fff;
+  --text: #0b0b0b;
+  --muted: #f2f2f2;
+  --accent-red: #FF3B30;
+  --accent-blue: #5E8AFF; 
+  --accent-yellow: #FFCC00;
+  --transition: 200ms ease-in-out;
+  --max-width: 1100px;
+}
+
+/* --- GLOBAL --- */
+body {
+  margin: 0;
+  font-family: 'Amiko', sans-serif; 
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: 'Amiko', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-links {
+    gap: 1rem;
+  }
+  
+  .footer-link {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #000;
+  color: #fff;
+  border-top: 2px solid var(--accent-yellow);
+}
+
+.footer-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-text p {
+  margin: 0;
+  font-family: 'Amiko', sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-link {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid;
+  font-family: 'Amiko', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.footer-link.linkedin {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.footer-link.email {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+
+.footer-link.resume {
+  border-color: var(--accent-yellow);
+  color: var(--accent-yellow);
+}
+
+.footer-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.footer-link.linkedin:hover {
+  background: var(--accent-blue);
+  color: #000;
+}
+
+.footer-link.email:hover {
+  background: var(--accent-red);
+  color: #fff;
+}
+
+.footer-link.resume:hover {
+  background: var(--accent-yellow);
+  color: #000;
+}
