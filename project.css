@@ -1,4 +1,5 @@
 
+
 .project-page .hero-section {
   /* project hero spacing only */
 }
@@ -109,13 +110,13 @@
 
 /* Content Area */
 .project-content {
-  grid-column: 2;
+  /*grid-column: 2;*/
   min-width: 0;
 }
 
 /* Sections */
 .content-section {
-  padding: 4rem 5rem;
+  padding: 2rem 3rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -194,136 +195,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* LARGE HERO LAPTOP SECTION */
-.hero-laptop-wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-  margin-bottom: 2rem;
-}
 
-
-.laptop-full-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero-laptop-wrapper .skills-badge {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  color: #333;
-  background: #fff;
-  padding: 1.5rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  max-width: 180px;
-  text-align: left;
-  line-height: 1.6;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.skills-badge strong {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: #000;
-}
-
-.hero-text-content {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding: 0 2rem;
-}
-
-.hero-text-content h1 {
-  margin-top: 0;
-}
-
-
-.click-indicator {
-  position: absolute;
-  bottom: -2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Amiko', sans-serif;
-  font-size: 0.9rem;
-  color: var(--accent-blue);
-  font-weight: 600;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.laptop-mockup:hover .click-indicator {
-  opacity: 1;
-}
-
-
-/* CENTER: laptop */
-.journey-page .laptop-link {
-  display: block;
-  flex: 1 1 auto;
-  max-width: 760px;
-}
-
-.journey-page .laptop-mockup-large {
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.journey-page .laptop-full-image {
-  width: 100%;
-  height: auto;
-  max-height: 58vh;      /* THIS is what makes it fit on screen */
-  object-fit: contain;
-  display: block;
-}
-
-/* RIGHT: skills */
-.journey-page .hero-skills {
-  flex: 0 0 240px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  color: #333;
-}
-
-.journey-page .hero-skills strong {
-  font-family: 'Amiko', sans-serif;
-  color: #000;
-}
-
-/* Responsive: stack nicely */
-@media (max-width: 900px) {
-  .journey-page .hero-row {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.25rem;
-  }
-
-  .journey-page .hero-left-note,
-  .journey-page .hero-skills {
-    flex: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .journey-page .hero-arrow {
-    margin: 0 auto;
-  }
-
-  .journey-page .laptop-full-image {
-    max-height: 50vh;
-  }
-}
 /* BEFORE/AFTER SLIDER */
 .before-after-slider {
   max-width: 800px;
@@ -423,12 +295,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #e0e0e0;
   overflow: hidden;
   cursor: pointer;
   position: relative;
   transition: all 0.4s ease;
   min-height: 300px;
-  box-shadow: 0 -2px 4px rgba(0,0,0,0.10), 0 -4px 4px rgba(0,0,0,0.08);
 }
 
 /* Drop Shadow for White Images */
@@ -445,54 +317,7 @@
   transition: transform 0.4s ease;
 }
 
-/* =========================
-   PROJECT OVERVIEW — 2-COLUMN GRID (label + content)
-   Works for Journey, Golf, SCC (and any page using .overview-item)
-   ========================= */
 
-#overview .overview-item{
-  display: grid;
-  grid-template-columns: 170px 1fr;  /* LEFT labels | RIGHT content */
-  column-gap: 2.5rem;
-  row-gap: 0.5rem;
-  align-items: start;
-
-  padding: 1.2rem 0;
-  margin: 0; /* override older margin-bottom */
-}
-
-/* Left column label (Description / Problem / Goals / Role) */
-#overview .overview-item h3{
-  margin: 0;
-  font-family: "Amiko", sans-serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #333;
-}
-
-/* Right column paragraph */
-#overview .overview-item p{
-  margin: 0;
-  max-width: none; /* IMPORTANT: remove the 800px clamp for this layout */
-}
-
-/* Optional: slightly tighter spacing under the "Project Overview" h2 */
-#overview h2{
-  margin-bottom: 1.75rem;
-}
-
-/* Responsive: stack label above text on smaller screens */
-@media (max-width: 768px){
-  #overview .overview-item{
-    grid-template-columns: 1fr;
-    row-gap: 0.4rem;
-    padding: 1rem 0;
-  }
-
-  #overview .overview-item h3{
-    font-size: 1.2rem;
-  }
-}
 
 /* Lightbox */
 .lightbox {
@@ -760,241 +585,7 @@
 }
 
 
-/* =========================================
-   JOURNEYLINE HERO — FINAL OVERRIDES
-   Paste at VERY BOTTOM of project.css
-   ========================================= */
-
-.journey-page .hero-section{
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-}
-
-/* 3 columns: note | laptop | skills, then meta underneath */
-.journey-page .hero-stage{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2rem;
-
-  display: grid;
-  grid-template-columns: minmax(150px, 190px) minmax(320px, 1fr) minmax(180px, 260px);
-  grid-template-rows: auto auto;
-  column-gap: clamp(1rem, 3vw, 2.5rem);
-  row-gap: 1rem;
-  align-items: center;
-}
-
-/* LEFT NOTE */
-.journey-page .hero-annotation{
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: end;
-  align-self: center;
-}
-
-.journey-page .hero-annotation p{
-  margin: 0 0 0.6rem 0;
-  font-family: "Amiko", sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
-  font-size: 0.95rem;
-}
-
-/* Arrow scale down */
-.journey-page .hero-annotation img{
-  width: clamp(85px, 10vw, 120px);
-  height: auto;
-  display: block;
-}
-
-/* CENTER LAPTOP */
-.journey-page .laptop-link{
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: center;
-  width: 100%;
-  max-width: 760px;
-  display: block;
-}
-
-.journey-page .hero-laptop{
-  width: 100%;
-  height: auto;
-
-  /* KEY: keeps it fitting on shorter screens */
-  max-height: clamp(260px, 52vh, 520px);
-  object-fit: contain;
-  display: block;
-}
-
-/* RIGHT SKILLS */
-.journey-page .hero-skills{
-  grid-column: 3;
-  grid-row: 1;
-  justify-self: start;
-  align-self: center;
-
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.journey-page .hero-skills strong{
-  font-family: "Amiko", sans-serif;
-  color: #000;
-}
-
-/* TITLE/META UNDERNEATH (tighten spacing) */
-.journey-page .hero-meta{
-  grid-column: 1 / -1;
-  grid-row: 2;
-  text-align: center;
-  margin-top: 0.25rem;
-}
-
-.journey-page .hero-meta h1{
-  margin: 0.6rem 0 0.35rem 0;   /* smaller gap */
-}
-
-.journey-page .project-subtitle{
-  margin: 0 0 0.9rem 0;        /* smaller gap */
-}
-
-/* Align hero text column with Overview column */
-.journey-page #hero.content-section{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-@media (max-width: 1024px){
-  .journey-page #hero.content-section{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-@media (max-width: 768px){
-  .journey-page #hero.content-section{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-/* RESPONSIVE: stack on smaller widths */
-@media (max-width: 900px){
-  .journey-page .hero-stage{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    text-align: center;
-  }
-
-  .journey-page .hero-annotation{
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-  }
-
-  .journey-page .laptop-link{
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .journey-page .hero-skills{
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: center;
-    text-align: center;
-  }
-
-  .journey-page .hero-meta{
-    grid-column: 1;
-    grid-row: 4;
-  }
-}
-
-.journey-page .hero-stage{
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Row: left note | laptop | skills */
-.journey-page .hero-row{
-  display: grid;
-  grid-template-columns: 170px 1fr 240px;
-  align-items: center;
-  gap: clamp(1.25rem, 3vw, 2.5rem);
-}
-
-/* LEFT */
-.journey-page .hero-annotation p{
-  font-family: 'Amiko', sans-serif;
-  font-weight: 600;
-  margin: 0 0 0.6rem 0;
-  line-height: 1.2;
-}
-
-/* Vector78 smaller */
-.journey-page .hero-annotation img{
-  width: clamp(70px, 6vw, 95px);
-  height: auto;
-  display: block;
-}
-
-/* CENTER laptop bigger, but still fits screen */
-.journey-page .laptop-link img{
-  width: 100%;
-  /*max-width: 90%;
-  max-height: 52vh;  */       /* key: keeps it fitting on smaller screens */
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-/* RIGHT skills */
-.journey-page .hero-skills{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: #333;
-}
-.journey-page .hero-skills strong{
-  font-family: 'Amiko', sans-serif;
-  color: #000;
-}
-
-/* BELOW: align hero text with the same left edge as your sections */
-.journey-page .hero-meta{
-  margin-top: 1.25rem;
-  text-align: left; /* matches the overview column */
-}
-
-/* Tighten laptop-to-title spacing */
-.journey-page .hero-meta h1{
-  margin: 0.6rem 0 0.6rem 0;
-}
-
-/* Responsive stacking */
-@media (max-width: 900px){
-  .journey-page .hero-row{
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .journey-page .hero-meta{
-    text-align: left; /* keep consistent with the page content */
-  }
-  .journey-page .hero-annotation{
-    justify-self: center;
-  }
-  .journey-page .hero-skills{
-    justify-self: center;
-  }
-  .journey-page .laptop-link img{
-    max-height: 46vh;
-  }
-}
-
-/* =========================
-   GOLF HERO FIX (slider fits + aligns with title)
-   ========================= */
+/* GOLF HERO FIX (slider fits + aligns with title) */
 
 .golf-page #hero {
   /* less vertical padding so everything fits on first screen */
@@ -1036,9 +627,7 @@
   padding-bottom: 0;
 }
 
-/* =========================
-   SCC HERO (wireframe match)
-   ========================= */
+/* SCC HERO (wireframe match) */
 .scc-page .hero-section{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1048,8 +637,8 @@
 .scc-page .scc-hero-stage{
   position: relative;
   max-width: 1100px;
-  margin: 0 auto 1.25rem;
-  padding: 0 2rem;
+  /*margin: 0 auto 1.25rem;
+  padding: 0 2rem;*/
 
   display: grid;
   grid-template-columns: 170px minmax(320px, 1fr) 240px;
@@ -1360,4 +949,191 @@
 
 .next-arrow {
   font-weight: 800;
+}
+
+/* =========================================
+   JOURNEYLINE HERO — wireframe layout
+   ========================================= */
+
+.journey-page #hero{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* 2 columns: main (left) + sidebar (right) */
+.journey-page .journey-hero{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* LEFT block (image + title/meta aligned together) */
+.journey-page .journey-hero-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centers image + title like your wireframe */
+}
+
+.journey-page .journey-hero-image{
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  display: block;
+}
+
+/* title sits directly under image, aligned with it */
+.journey-page .journey-hero-title{
+  margin: 1.5rem 0 0.75rem;
+  text-align: left;
+  font-family: "Amiko", sans-serif;
+}
+
+/* timeframe/team row under title */
+.journey-page .journey-hero-meta{
+  display: flex;
+  gap: 3rem;
+  justify-content: left;
+  flex-wrap: wrap;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+}
+
+.journey-page .journey-hero-meta p{
+  margin: 0;
+}
+
+/* RIGHT stacked boxes */
+.journey-page .journey-hero-side{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* shared box style */
+.journey-page .journey-box{
+  border-radius: 12px;
+  padding: 1.1rem 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+/* top dark clickable box */
+.journey-page .journey-box-dark{
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* lower light skills box */
+.journey-page .journey-box-light{
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+}
+
+/* Responsive: stack sidebar under main */
+@media (max-width: 900px){
+  .journey-page .journey-hero{
+    grid-template-columns: 1fr;
+  }
+  .journey-page .journey-hero-side{
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+
+
+/* =========================================
+   SCC HERO — wireframe layout (like Journey)
+   ========================================= */
+
+.scc-page #hero{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* 2 columns: main (left) + sidebar (right) */
+.scc-page .scc-hero{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* LEFT block (image + title/meta aligned together) */
+.scc-page .scc-hero-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scc-page .scc-hero-image{
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  display: block;
+}
+
+.scc-page .scc-hero-title{
+  margin: 1.5rem 0 0.75rem;
+  text-align: left;
+  font-family: "Amiko", sans-serif;
+}
+
+.scc-page .scc-hero-meta{
+  display: flex;
+  gap: 3rem;
+  justify-content: left;
+  flex-wrap: wrap;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+}
+
+.scc-page .scc-hero-meta p{
+  margin: 0;
+}
+
+/* RIGHT stacked boxes */
+.scc-page .scc-hero-side{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.scc-page .scc-box{
+  border-radius: 12px;
+  padding: 1.1rem 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.scc-page .scc-box-dark{
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.scc-page .scc-box-light{
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+}
+
+/* Responsive: stack sidebar under main */
+@media (max-width: 900px){
+  .scc-page .scc-hero{
+    grid-template-columns: 1fr;
+  }
+  .scc-page .scc-hero-side{
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }
