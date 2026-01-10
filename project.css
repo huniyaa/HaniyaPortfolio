@@ -301,6 +301,7 @@
   position: relative;
   transition: all 0.4s ease;
   min-height: 300px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1), 0 -4px 4px rgba(0,0,0,0.08);
 }
 
 /* Drop Shadow for White Images */
@@ -1137,3 +1138,4 @@
     margin: 0 auto;
   }
 }
+
