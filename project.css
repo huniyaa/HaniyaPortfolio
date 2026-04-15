@@ -1,5 +1,4 @@
 
-
 .project-page .hero-section {
   /* project hero spacing only */
 }
@@ -1135,6 +1134,111 @@
   }
   .scc-page .scc-hero-side{
     max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* =========================================
+   KNOW YOUR REP HERO
+   ========================================= */
+
+.kyr-page #hero{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.kyr-page .kyr-hero{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.kyr-page .kyr-hero-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kyr-page .kyr-hero-image-link{
+  display: block;
+  width: 100%;
+}
+
+.kyr-page .kyr-hero-image{
+  width: 100%;
+  max-width: 820px;
+  max-height: 56vh;       /* key fix: caps height just like scc-laptop-img */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.kyr-page .kyr-hero-title{
+  margin: 1.5rem 0 0.75rem;
+  text-align: left;
+  width: 100%;
+  font-family: "Amiko", sans-serif;
+}
+
+.kyr-page .kyr-hero-meta{
+  display: flex;
+  gap: 3rem;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+}
+
+.kyr-page .kyr-hero-meta p{
+  margin: 0;
+}
+
+.kyr-page .kyr-hero-side{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.kyr-page .kyr-box{
+  border-radius: 12px;
+  padding: 1.1rem 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.kyr-page .kyr-box-dark{
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.kyr-page .kyr-box-light{
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+}
+
+@media (max-width: 900px){
+  .kyr-page .kyr-hero{
+    grid-template-columns: 1fr;
+  }
+  .kyr-page .kyr-hero-side{
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .kyr-page .kyr-hero-image{
+    max-height: 48vh;
+  }
+}
     margin: 0 auto;
   }
 }
