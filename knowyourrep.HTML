@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Know Your Rep – Haniya Humayun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body class="project-page kyr-page">
+
+  <!-- Header -->
+  <header class="project-header">
+    <a href="index.html" class="eyes-logo">
+      <img src="eyelogo.svg" alt="Logo" />
+    </a>
+    <a href="index.html#works" class="back-link">← Back to Work</a>
+  </header>
+
+  <main class="project-main">
+    <div class="project-layout">
+
+      <!-- Vertical Navigation -->
+      <nav class="project-nav" id="projectNav">
+        <div class="nav-sticky">
+          <a href="#overview">Project Overview</a>
+          <a href="#inspiration">Inspiration</a>
+          <a href="#research">Research</a>
+          <a href="#design-process">Design Process</a>
+          <a href="#resolution">Resolution</a>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <div class="project-content">
+
+        <!-- Hero Section -->
+        <section id="hero" class="content-section hero-section">
+          <div class="kyr-hero">
+
+            <div class="kyr-hero-main">
+              <a class="kyr-hero-image-link" href="https://know-you-rep-prod.vercel.app/" target="_blank" rel="noopener">
+                <img class="kyr-hero-image" src="LIBPHOTOMAIN.jpg" alt="Know Your Rep preview">
+              </a>
+              <h1 class="kyr-hero-title">Know Your Rep: A Library Display</h1>
+              <div class="kyr-hero-meta">
+                <p><strong>Timeframe:</strong> 2–3 weeks</p>
+                <p><strong>By:</strong> Haniya Butt</p>
+              </div>
+            </div>
+
+            <aside class="kyr-hero-side">
+              <a class="kyr-box kyr-box-dark" href="https://know-you-rep-prod.vercel.app/" target="_blank" rel="noopener">
+                Click to view<br/>project
+              </a>
+              <div class="kyr-box kyr-box-light">
+                <strong>Skills:</strong> Interaction Design, Information Architecture, Visual System, ProtoPie, Spatial Design (Spline)
+              </div>
+            </aside>
+
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="overview" class="content-section">
+          <h2>Project Overview</h2>
+
+          <div class="overview-item">
+            <h3>Description</h3>
+            <p>Know Your Rep is a library kiosk installation exploring how civic data can be transformed into a friendly, community-centered interactive learning experience. Built from a previous project called Know Your MP, the system reimagines political and civic information as a spatial, exploratory kiosk inside a library environment.</p>
+            <p>This is a high-fidelity prototype focusing on one district, designed to explore interaction, structure, and visual system at a detailed level.</p>
+          </div>
+
+          <div class="overview-item">
+            <h3>Problem</h3>
+            <p>Local political information is often not well understood, and many people are not aware of their representatives or how their riding works. Existing systems present this data in ways that are not engaging or easy to navigate.</p>
+          </div>
+
+          <div class="overview-item">
+            <h3>Goals</h3>
+            <p>To make civic information more accessible by breaking complex data into clear, structured sections. I aimed to improve navigation and engagement through an experience that reduces cognitive overload.</p>
+          </div>
+        </section>
+
+        <!-- Inspiration -->
+        <section id="inspiration" class="content-section">
+          <h2>Inspiration</h2>
+
+          <h3>Project Origin</h3>
+          <p>Inspired by OpenParliament, which structures Canadian political data through APIs. This led to <a href="https://know-your-rep.vercel.app/" target="_blank" rel="noopener" style="color: var(--accent-blue); text-decoration: underline;">Know Your MP</a>, a previous map-based project exploring MPs and electoral districts.</p>
+          <p>This installation builds on that work by reusing its dataset and expanding it into a spatial kiosk. The "Your Rep" section is preloaded with the user's district, linking directly into the visualization.</p>
+
+          <h3>Project Evolution</h3>
+          <p>This project was initially inspired by OpenParliament, which compiles Canadian political information through structured data and APIs. Using its API made me think about how complex information can be simplified and made more accessible through design.</p>
+          <p>This led to my earlier project, Know Your MP — a map-based prototype that allows users to explore Members of Parliament and their electoral districts. Know Your Rep takes that idea further, placing it in a physical environment designed for casual public discovery.</p>
+        </section>
+
+        <!-- Research -->
+        <section id="research" class="content-section">
+          <h2>Research</h2>
+
+          <h3>Reference Review</h3>
+          <p>Reviewed Government of Canada design guidelines and official political sources, including Elections Canada, the House of Commons, and major party websites (Liberal and Conservative). This grounded the visual and information hierarchy in familiar civic contexts while identifying gaps in accessibility and clarity.</p>
+
+          <h3>Moodboard</h3>
+          <p>I compiled a moodboard to explore visual direction and establish the specific visual language I wanted to convey.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="libinspo.png" alt="Moodboard for Know Your Rep" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Design Process -->
+        <section id="design-process" class="content-section">
+          <h2>Design Process</h2>
+
+          <h3>Initial Drafts</h3>
+          <p>Early sketches were used to explore layout ideas and core interactions, focusing on how civic data — riding boundaries, representative profiles, and voting history — could be represented in a kiosk format. This stage helped define the overall spatial structure before committing to digital layouts.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="libinitial.png" alt="Initial Sketches for Know Your Rep" />
+            </div>
+          </div>
+
+          <h3>User Feedback</h3>
+          <p>Users felt the single-page layout was too dense, hard to navigate, and not efficient for casual viewing. They suggested clearer navigation options and more interactivity. A key insight: if you are going to present civic information, make it visually interesting — not just complete.</p>
+
+          <h3>Revising Layouts</h3>
+          <p>Low and mid-fidelity wireframes translated sketches into structured screens. This stage focused on hierarchy, information placement, and interaction patterns without visual styling — allowing rapid iteration on layout and functionality before applying the visual system.</p>
+          <div class="image-grid">
+            <div class="content-image shadowed">
+              <img src="revisinglayouts.jpg" alt="Revised Layout Wireframes" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Resolution -->
+        <section id="resolution" class="content-section">
+          <h2>Resolution</h2>
+
+          <h3>Reflection</h3>
+          <ul class="reflection-list">
+            <li>This was my first time designing for a physical, spatial installation context — it pushed me to think about proximity, scale, and public interaction in a way screen design rarely requires.</li>
+            <li>Reusing the Know Your MP dataset taught me how a strong data foundation can support multiple design expressions across different form factors.</li>
+            <li>User feedback was a turning point — it clarified that civic data doesn't need to be dry, and that engagement and clarity can coexist.</li>
+            <li>This project deepened my interest in information architecture and how spatial, environmental design can lower barriers to civic participation.</li>
+          </ul>
+          <a href="https://know-you-rep-prod.vercel.app/" target="_blank" class="cta-button">View Live Project →</a>
+        </section>
+
+        <!-- Next Project -->
+        <section class="next-project">
+          <a href="journeyline.html" class="next-card">
+            <span class="next-kicker">Next Project</span>
+            <span class="next-title">
+              Journey Line <span class="next-arrow">→</span>
+            </span>
+          </a>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>© 2025 Haniya Humayun.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/haniya-butt-5ba002354/" class="footer-link linkedin" target="_blank">LinkedIn</a>
+        <a href="mailto:haniyahumayun@gmail.com" class="footer-link email">Email</a>
+        <a href="https://drive.google.com/file/d/1EtTj3OtxNpZwKZVB-AjChbu73V7cDmTo/view?usp=sharing" class="footer-link resume" target="_blank">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="journeyline.js"></script>
+</body>
+</html>
